@@ -1,0 +1,58 @@
+:root {
+
+    /* Colors */
+    --primary-blue: #0D3B66;
+    --primary-yellow: #F4D35E;
+    --primary-tint: #FAF0CA;
+    --primary-green: #78B689;
+    /* Box Shadows */
+    --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --inner-shadow: 0px 1px 4px 0px rgba(75, 74, 74, 0.50) inset;
+    
+}
+
+/* RESET STYLES */
+
+/* 1. Remove default margin, padding, and set box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Ensure body takes full height and set a default font */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Remove default button styling */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+/* 4. Remove anchor default styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. Improve accessibility for focusable elements */
+:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+  
+/* 6. Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+

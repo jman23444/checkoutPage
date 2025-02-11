@@ -1,0 +1,55 @@
+
+header[id="nav-container"] {
+    height: 172px;
+    width: 100%;
+    background-color: var(--primary-tint);
+    position: relative;
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#back-arrow {
+    height: auto;
+    width: 64px;
+    position: absolute;
+    left: 32px;
+    top: 48px;
+}
+
+#decoration {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+#back-arrow:hover {
+    cursor: pointer;
+}
+
+div[id="progressBar"] {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+div[id="icon-text-container"] {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    color: var(--primary-blue);
+}
+
+#progress-icon {
+    height: 32px;
+    width: 32px;
+}
+
+div[id="progress-line"] {
+    width: 128px;
+    height: 1px;
+    border: solid 1.5px var(--primary-green);
+}

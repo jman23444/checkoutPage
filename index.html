@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <main>
+        <!-- Header Section -->
+        <header id="nav-container">
+            <svg id="back-arrow" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <path d="M25.52 15.8133L9.33334 32L25.52 48.1867" stroke="#888888" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M54.6667 32H9.78667" stroke="#888888" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <svg id="decoration" xmlns="http://www.w3.org/2000/svg" width="418" height="162" viewBox="0 0 418 162" fill="none">
+                    <path opacity="0.2" d="M2.05489 107.253C12.8663 147.96 62.7985 170.025 113.582 156.538C164.365 143.05 196.769 99.1172 185.958 58.4105C179.899 35.5974 157.56 21.732 136.063 27.4415C114.565 33.151 102.05 56.2733 108.109 79.0864C118.921 119.793 168.853 141.858 219.636 128.371C270.42 114.883 302.825 70.9498 292.013 30.243C285.955 7.42991 263.615 -6.43531 242.117 -0.725642C220.62 4.98386 208.105 28.1062 214.164 50.9193C224.975 91.626 275.16 113.624 326.255 100.054C377.349 86.4835 410.007 42.4831 399.196 1.77635C393.137 -21.0368 370.797 -34.902 349.299 -29.1923C327.801 -23.4826 315.289 -0.36101 321.348 22.4521C332.159 63.1589 382.09 85.2244 432.873 71.7367C483.657 58.249 516.059 14.3166 505.248 -26.3902C499.189 -49.2033 476.853 -63.0693 455.355 -57.3597C433.857 -51.65 421.341 -28.5275 427.4 -5.71441C438.211 34.9923 488.145 57.057 538.929 43.5693C589.712 30.0816 622.114 -13.8508 611.303 -54.5575C605.244 -77.3706 582.905 -91.2359 561.41 -85.527C539.912 -79.8174 527.396 -56.6949 533.455 -33.8818C544.266 6.82498 594.2 28.8897 644.981 15.4028C695.764 1.91513 728.17 -42.0181 717.358 -82.7249C711.299 -105.538 688.96 -119.403 667.462 -113.694C645.967 -107.985 633.451 -84.8623 639.51 -62.0492C650.322 -21.3424 700.505 0.656066 751.6 -12.9142C802.694 -26.4844 835.352 -70.4848 824.541 -111.192" stroke="#F95738" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            <div id="progressBar">
+                <div id="icon-text-container">
+                    <svg id="progress-icon bag-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M11.7467 2.66666L6.92 7.50666" stroke="#0D3B66" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.2533 2.66666L25.08 7.50666" stroke="#0D3B66" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.66667 10.4667C2.66667 7.99999 3.98667 7.79999 5.62667 7.79999H26.3733C28.0133 7.79999 29.3333 7.99999 29.3333 10.4667C29.3333 13.3333 28.0133 13.1333 26.3733 13.1333H5.62667C3.98667 13.1333 2.66667 13.3333 2.66667 10.4667Z" stroke="#0D3B66" stroke-width="1.5"/>
+                        <path d="M13.0133 18.6667V23.4" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M19.1467 18.6667V23.4" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M4.66667 13.3333L6.54667 24.8533C6.97334 27.44 8 29.3333 11.8133 29.3333H19.8533C24 29.3333 24.6133 27.52 25.0933 25.0133L27.3333 13.3333" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    <p>Cart</p>
+                </div>
+                <div id="progress-line"></div>
+                <div id="icon-text-container">
+                    <svg id="progress-icon delivery-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 18.6667H17.3333C18.8 18.6667 20 17.4667 20 16V2.66666H8C6 2.66666 4.25335 3.77331 3.34668 5.39997" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.66666 22.6667C2.66666 24.88 4.45332 26.6667 6.66666 26.6667H7.99999C7.99999 25.2 9.19999 24 10.6667 24C12.1333 24 13.3333 25.2 13.3333 26.6667H18.6667C18.6667 25.2 19.8667 24 21.3333 24C22.8 24 24 25.2 24 26.6667H25.3333C27.5467 26.6667 29.3333 24.88 29.3333 22.6667V18.6667H25.3333C24.6 18.6667 24 18.0667 24 17.3333V13.3333C24 12.6 24.6 12 25.3333 12H27.0533L24.7733 8.01334C24.2933 7.18667 23.4134 6.66666 22.4534 6.66666H20V16C20 17.4667 18.8 18.6667 17.3333 18.6667H16" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.6667 29.3333C12.1394 29.3333 13.3333 28.1394 13.3333 26.6667C13.3333 25.1939 12.1394 24 10.6667 24C9.19391 24 8 25.1939 8 26.6667C8 28.1394 9.19391 29.3333 10.6667 29.3333Z" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.3333 29.3333C22.8061 29.3333 24 28.1394 24 26.6667C24 25.1939 22.8061 24 21.3333 24C19.8606 24 18.6667 25.1939 18.6667 26.6667C18.6667 28.1394 19.8606 29.3333 21.3333 29.3333Z" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M29.3333 16V18.6667H25.3333C24.6 18.6667 24 18.0667 24 17.3333V13.3333C24 12.6 24.6 12 25.3333 12H27.0533L29.3333 16Z" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.66666 10.6667H10.6667" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.66666 14.6667H7.99999" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.66666 18.6667H5.33332" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <p>Shipping</p>
+                </div>
+                <div id="progress-line"></div>
+                <div id="icon-text-container">
+                    <svg id="progress-icon delivery-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M2.66669 16.8133H25.3334" stroke="#0D3B66" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25.3334 13.7067V23.24C25.2934 27.04 24.2533 28 20.2933 28H7.70673C3.68006 28 2.66669 27 2.66669 23.0267V13.7067C2.66669 10.1067 3.50669 8.94667 6.66669 8.76C6.98669 8.74667 7.33339 8.73334 7.70673 8.73334H20.2933C24.32 8.73334 25.3334 9.73334 25.3334 13.7067Z" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M29.3334 8.97333V18.2933C29.3334 21.8933 28.4934 23.0533 25.3334 23.24V13.7067C25.3334 9.73333 24.32 8.73333 20.2933 8.73333H7.70673C7.33339 8.73333 6.98669 8.74667 6.66669 8.76C6.70669 4.96 7.74673 4 11.7067 4H24.2933C28.32 4 29.3334 5 29.3334 8.97333Z" stroke="#0D3B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 23.7467H9.29329" stroke="#0D3B66" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.1467 23.7467H16.7333" stroke="#0D3B66" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <p>Payment</p>
+                </div>
+            </div>
+        </header>
+
+    </main>
+</body>
+</html>
