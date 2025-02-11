@@ -2,6 +2,7 @@
 
     /* Colors */
     --primary-blue: #0D3B66;
+    --neutral-background: #ddd;
     --primary-yellow: #F4D35E;
     --primary-tint: #FAF0CA;
     --primary-green: #78B689;
@@ -24,12 +25,12 @@
 
 /* 2. Ensure body takes full height and set a default font */
 html, body {
-  height: 100%;
-  width: 100%;
-  font-family: sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* 3. Remove default button styling */
@@ -56,3 +57,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 7. Remove default styling from inputs */
+
+input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+  }

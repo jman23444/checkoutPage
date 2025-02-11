@@ -1,4 +1,6 @@
 
+/* HEADER */
+
 header[id="nav-container"] {
     height: 172px;
     width: 100%;
@@ -20,7 +22,7 @@ header[id="nav-container"] {
 
 #decoration {
     position: absolute;
-    right: -10px;
+    right: 0px;
     top: -10px;
 }
 
@@ -52,4 +54,200 @@ div[id="progress-line"] {
     width: 128px;
     height: 1px;
     border: solid 1.5px var(--primary-green);
+}
+
+
+/* Body Layout */
+
+.body {
+    height: auto;
+    width: 100%;
+    padding: 32px;
+}
+
+#form-container {
+    /*  */
+    width: 60%;
+    height: auto;
+    padding: 32px;
+    /*  */
+    border: 1px solid var(--neutral-background);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+#cc-parent-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#cc-container {
+    display: flex;
+    width: 358px;
+    height: 230px;
+    padding: 15px 19.592px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+#add-icon {
+    z-index: 10;
+    position: absolute;
+    right: -16px;
+    cursor: pointer;
+}
+
+
+/* FORM CONTAINER / FORM STYLING */
+
+.body h2 {
+    color: #888;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+img[id="cc-image"] {
+    width: 318.408px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.label {
+    color: #888;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first-label {
+    color: #525252;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Form Styles */
+
+input, select {
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #EDEDED;
+    appearance: none; 
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #525252;
+    line-height: normal;
+}
+
+select option {
+    color: #525252;
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: white;
+}
+
+select:focus,
+select:active {
+    color: #525252;
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:user-invalid, 
+input:focus:invalid {
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+
+
+label[for="saved_cc"] {
+    width: 100%;
+}
+
+#form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+#first-input-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 69px;
+}
+
+#input-field-1, #input-field-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#last-two-inputs {
+    width: 100%;
+    display: flex;
+    height: 79px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 69px;
+}
+
+.input-field {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px; 
+}
+
+div[id="cc-icons"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+img[id="cc-icon"] {
+    width: 40px;
+    height: 27px;
+    flex-shrink: 0;
 }
