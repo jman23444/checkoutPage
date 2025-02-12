@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./theme.css">
+    <script src="./main.js" defer></script>
     <title>Checkout Page</title>
 </head>
 <body>
@@ -156,86 +157,92 @@
                 <h2>Order Summary</h2>
                 <div id="order-summary">
                     <div class="product-cart">
-                        <div class="product-frame">
-                            <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
-                            <div class="product-quantity-frames">
-                                <div class="product-frame-text">
-                                    <div class="product-frame-nested-text">
-                                        <h3>Secret Concealer</h3>
-                                        <p>covers dark circles covers dark</p>
+                        <div class="cart-item" data-price="21.45">
+                            <div class="product-frame">
+                                <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
+                                <div class="product-quantity-frames">
+                                    <div class="product-frame-text">
+                                        <div class="product-frame-nested-text">
+                                            <h3>Secret Concealer</h3>
+                                            <p>covers dark circles covers dark</p>
+                                        </div>
+                                        <h3 id="price-here">$21.45</h3>
                                     </div>
-                                    <h3>$21.45</h3>
-                                </div>
-                                <div id="quantity-selector-container">
-                                    <div id="quantity-box-2">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                    </div>
-                                    <div id="quantity-box-1">
-                                        <p>1</p>
-                                    </div>
-                                    <div id="quantity-box-3">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                                            <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-frame">
-                            <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
-                            <div class="product-quantity-frames">
-                                <div class="product-frame-text">
-                                    <div class="product-frame-nested-text">
-                                        <h3>Secret Concealer</h3>
-                                        <p>covers dark circles covers dark</p>
-                                    </div>
-                                    <h3>$21.45</h3>
-                                </div>
-                                <div id="quantity-selector-container">
-                                    <div id="quantity-box-2">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                    </div>
-                                    <div id="quantity-box-1">
-                                        <p>1</p>
-                                    </div>
-                                    <div id="quantity-box-3">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                                            <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
+                                    <div id="quantity-selector-container">
+                                        <div id="quantity-box-2">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                        <div id="quantity-box-1">
+                                            <p>1</p>
+                                        </div>
+                                        <div id="quantity-box-3">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                                                <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-frame">
-                            <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
-                            <div class="product-quantity-frames">
-                                <div class="product-frame-text">
-                                    <div class="product-frame-nested-text">
-                                        <h3>Secret Concealer</h3>
-                                        <p>covers dark circles covers dark</p>
+                        <div class="cart-item" data-price="21.45">
+                            <div class="product-frame">
+                                <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
+                                <div class="product-quantity-frames">
+                                    <div class="product-frame-text">
+                                        <div class="product-frame-nested-text">
+                                            <h3>Secret Concealer</h3>
+                                            <p>covers dark circles covers dark</p>
+                                        </div>
+                                        <h3 id="price-here">$21.45</h3>
                                     </div>
-                                    <h3>$21.45</h3>
+                                    <div id="quantity-selector-container">
+                                        <div id="quantity-box-2">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                        <div id="quantity-box-1">
+                                            <p>1</p>
+                                        </div>
+                                        <div id="quantity-box-3">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                                                <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="quantity-selector-container">
-                                    <div id="quantity-box-2">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
+                            </div>
+                        </div>
+                        <div class="cart-item" data-price="21.45">
+                            <div class="product-frame">
+                                <img src="./media/636fd04982af8e4fb68b3758c8f8911d.jpg" alt="product image">
+                                <div class="product-quantity-frames">
+                                    <div class="product-frame-text">
+                                        <div class="product-frame-nested-text">
+                                            <h3>Secret Concealer</h3>
+                                            <p>covers dark circles covers dark</p>
+                                        </div>
+                                        <h3 id="price-here">$21.45</h3>
                                     </div>
-                                    <div id="quantity-box-1">
-                                        <p>1</p>
-                                    </div>
-                                    <div id="quantity-box-3">
-                                        <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
-                                            <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
+                                    <div id="quantity-selector-container">
+                                        <div id="quantity-box-2">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 12H18" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 18V6" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                        <div id="quantity-box-1">
+                                            <p>1</p>
+                                        </div>
+                                        <div id="quantity-box-3">
+                                            <svg id="quantity-selector-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+                                                <path d="M1 1H11" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
